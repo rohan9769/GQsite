@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Hi</h1>
+    {% for meme in memes%}
+    <script>
+         var url = meme['url']
+         var img = document.createElement('img');
+         img.src = url;
+         document.body.appendChild(img);
+    </script>
+
+    {% endfor %}
+</body>
+</html>
